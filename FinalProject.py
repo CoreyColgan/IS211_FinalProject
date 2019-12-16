@@ -21,7 +21,7 @@ PASSWORD = 'password'
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-API_URL = "https://www.googleapis.com/books/v1/volumes?q=isbn:9781449372620 "
+API_URL = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
